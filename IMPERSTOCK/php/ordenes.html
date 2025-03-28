@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imperstock - Dashboard</title>
+    <link rel="stylesheet" href="ordenes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="container">
+
+    <nav class="sidebar">
+        <ul>
+            <li class="logo">
+                <img src="implogo.jpg" alt="Imperstock">
+                <span>Imperstock</span>
+            </li>
+            <li class="home"><a href="inicio.html">
+                <i class="fa fa-home"></i> Home
+            </a></li>
+            <li class="proveedores"><a href="prov.html">
+                <i class="fa fa-user"></i> Proveedores
+            </a></li>
+            <li class="productos"><a href="product.html">
+                <i class="fa fa-cubes"></i> Productos
+            </a></li>
+            <li class="ordenes"><a href="ordenes.html">
+                <i class="fa fa-clipboard"></i> Órdenes
+            </a></li>
+            <li class="config"><a href="#">
+                <i class="fa fa-cog"></i> Configuración
+            </a></li>
+            <li class="logout"><a href="login.html">
+                <i class="fa fa-sign-out"></i> Salir
+            </a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h2>Órdenes Completadas</h2>
+        
+        <table class="orders-table">
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Descripción</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2025-03-20</td>
+                    <td>5 Cubetas de impermeabilizante acrílico</td>
+                    <td>$5,000</td>
+                </tr>
+                <tr>
+                    <td>2025-03-21</td>
+                    <td>3 Rollos de membrana impermeabilizante</td>
+                    <td>$7,200</td>
+                </tr>
+                <tr>
+                    <td>2025-03-22</td>
+                    <td>10 Litros de sellador base agua</td>
+                    <td>$1,500</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

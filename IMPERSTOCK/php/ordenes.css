@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #D5E2E2;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    background-color: white;
+    width: 90px;
+    overflow: hidden;
+    transition: width 0.2s linear;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    text-align: center;
+    display: flex;
+    transition: all 0.5s ease;
+    margin: 10px 0 0 10px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.logo span {
+    font-weight: bold;
+    padding-left: 20px;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+a {
+    position: relative;
+    color: #1B4079;
+    font-size: 14px;
+    display: table;
+    width: 300px;
+    padding: 10px;
+}
+
+.fa {
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top: 14px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.nav-item {
+    position: relative;
+    top: 12px;
+    margin-left: 10px;
+}
+
+a:hover {
+    background-color: #1B4079;
+    opacity: 0.7;
+    color: white;
+}
+
+nav:hover {
+    width: 200px;
+    transition: all 0.5s ease;
+}
+
+.container {
+    max-width: 750px;
+    margin: 30px auto;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    margin-left: 100px; 
+    transition: margin-left 0.5s ease;
+}
+
+nav:hover + .container {
+    margin-left: 230px;
+}
+
+h2 {
+    text-align: center;
+    color: #1B4079;
+    margin-bottom: 20px;
+}
+
+.orders-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.orders-table th, .orders-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+.orders-table th {
+    background-color: #1B4079;
+    color: white;
+}
+
+.orders-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}

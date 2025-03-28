@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #D5E2E2;
+}
+
+nav{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    background-color: white;
+    width: 90px;
+    overflow: hidden;
+    transition: width 0.2s linear;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);  
+}
+
+.logo{
+    text-align: center;
+    display: flex;
+    transition: all 0.5s ease;
+    margin: 10px 0 0 10px; 
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.logo span {
+    font-weight: bold;
+    padding-left: 20px;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+a{
+    position: relative;
+    color: #1B4079;
+    font-size: 14px;
+    display: table;
+    width: 300px;
+    padding: 10px;
+}
+
+.fa{
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top: 14px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.nav-item{
+    position: relative;
+    top: 12px;
+    margin-left: 10px;
+}
+
+a:hover{
+    background-color: #1B4079;
+    opacity: .70;
+}
+
+nav:hover{
+    width: 200px;
+    transition: all 0.5s ease;
+}
+
+
+.main-content {
+    margin-left: 100px; 
+    padding: 20px;
+    transition: margin-left 0.3s ease;
+}
+
+
+nav:hover ~ .main-content {
+    margin-left: 200px;
+    transition: margin-left 0.3s ease;
+}
+
+
+.main-content h1 {
+    font-size: 24px;
+    color: #1B4079;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 10px;
+}
+
+.main-content p {
+    font-size: 16px;
+    color: rgb(71, 71, 71);
+    margin-bottom: 20px;
+}
+
+
+.dashboard {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+.card {
+    flex: 1;
+    min-width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    color: rgb(19, 18, 18);
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+
+.card-proveedores { background: #DBB946;}
+.card-productos { background: #DBB946; }
+.card-ordenes { background: #DBB946; }

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="prov.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Imperstock</title>
+</head>
+<body>
+<nav>
+    <ul>
+        <li>
+            <a href="#" class="logo">
+                <a href="#" class="logo">
+                    <img src="implogo.jpg" alt="">
+            <span class="nav.item">Imperstock</span>
+
+            </a>
+        </li>
+        <li><a href="inicio.html">
+        <i class="fa fa-home"></i>
+        <span class="nav-item">Home</span>
+     </li></a>
+        <li><a href="prov.html">
+            <i class="fa fa-user"></i>
+            <span class="nav-item">Provedores</span>
+        </a></li>
+        <li><a href="product.html">     
+            <i class="fa fa-money"></i>
+            <span class="nav-item">Productos</span>
+        </a></li>
+        <li><a href="#">
+            <i class="fa fa-clipboard"></i>
+            <span class="nav-item">Ordenes</span>
+        </a></li>
+        <li><a href="#">
+        <i class="fa fa-cog"></i>
+        <span class="nav-item">Configuración</span>
+        <li><a href="#">
+            <i class="fa fa-sign-out"></i>
+            <span class="nav-item">Salir</span>
+    </ul>
+</nav>
+<section class="container">
+    <h1>Proveedores</h2>
+
+
+    
+    <h2>Agregar Proveedor</h2>
+    <form action="agregar.php" method="POST">
+        <input type="text" name="nombre" placeholder="Nombre" required>
+        <input type="text" name="contacto" placeholder="Contacto" required>
+        <input type="text" name="telefono" placeholder="Teléfono" required>
+        <input type="text" name="giro" placeholder="Giro" required>
+        <button type="submit">Agregar</button>
+    </form>
+
+    
+    
+    <section class="product-table">
+        <h2>Lista de Proveedores</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Contacto</th>
+                    <th>Teléfono</th>
+                    <th>giro</th>
+                </tr>
+            </thead>
+            <tbody id="product-list">
+                <tr>
+                    <td>ISOTERMIKA</td>
+                    <td>NOE ZUL</td>
+                    <td>8184758236</td>
+                    <td>IMPERMEABILIZANTES, ACRILICAS.</td>
+
+
+                </tr>
+                <tr>
+                    <td>CHOVATEK</td>
+                    <td>RAUL GARCÍA</td>
+                    <td>8193647291</td>
+                    <td>INSUMOS MEMBRANAS, TELA POLIESTER</td>
+
+
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+</section>
+
+</body>
+</html>
